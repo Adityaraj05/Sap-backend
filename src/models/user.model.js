@@ -13,23 +13,23 @@ const userSchema = new Schema(
         },
         email:{
             type:String,
-            require:true,
+            required:true,
             unique:true,
             lowercase:true,
             trim:true,
         },
         phoneNr:{
             type:Number,
-            require:true,
+            required:true,
             unique:true,
         },
-        password: {
+        password:{
             type: String,
             required: [true, 'Password is required']
         },
-        refreshToken: {
-            type: String
-        }
+        // refreshToken: {
+        //     type: String
+        // }
     },
     {
             timestamps: true
